@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Hugging With Closed Fists : These are the steps i followed to get biobert working with the existing bert hugging face pytorch code. - Wawok</title>
+	<script>(function(d,e){d[e]=d[e].replace("no-js","js");})(document.documentElement,"className");</script>
+	<meta name="description" content="Today athletes around the world, both men and.">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link rel="dns-prefetch" href="//fonts.googleapis.com">
+	<link rel="dns-prefetch" href="//fonts.gstatic.com">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700">
+
+	<link rel="stylesheet" href="/css/style.css">
+	
+
+	<link rel="shortcut icon" href="/favicon.ico">
+		
+</head>
+<body class="body">
+	<div class="container container--outer">
+		<header class="header">
+	<div class="container header__container">
+		
+	<div class="logo">
+		<a class="logo__link" href="/" title="Wawok" rel="home">
+			<div class="logo__item logo__text">
+					<div class="logo__title">Wawok</div>
+					
+				</div>
+		</a>
+	</div>
+		<div class="divider"></div>
+	</div>
+	
+    <script data-cfasync="false">
+    var _avp = _avp || [];
+    (function() {
+    var s = document.createElement('script');
+    s.type = 'text/javascript'; s.async = true; s.src = window.location.protocol + '//adserver.adreactor.com/js/libcode3.js';
+    var x = document.getElementsByTagName('script')[0];
+    x.parentNode.insertBefore(s, x);
+    })();
+    </script>
+    
+	
+	    
+    <script>
+    if (!document.cookie || document.cookie.indexOf('AVPWCAP=') == -1) {
+    _avp.push({ alias: '/', type: 'window', zid: 23, pid: 8697 });
+    }
+    </script>
+    
+	
+<script>(function(a,b,c){Object.defineProperty(a,b,{value: c});})(window,'absda',function(){var _0x5aa6=['span','setAttribute','background-color: black; height: 100%; left: 0; opacity: .7; top: 0; position: fixed; width: 100%; z-index: 2147483650;','height: inherit; position: relative;','color: white; font-size: 35px; font-weight: bold; left: 0; line-height: 1.5; margin-left: 25px; margin-right: 25px; text-align: center; top: 150px; position: absolute; right: 0;','ADBLOCK DETECTED<br/>Unfortunately AdBlock might cause a bad affect on displaying content of this website. Please, deactivate it.','addEventListener','click','parentNode','removeChild','removeEventListener','DOMContentLoaded','createElement','getComputedStyle','innerHTML','className','adsBox','style','-99999px','left','body','appendChild','offsetHeight','div'];(function(_0x2dff48,_0x4b3955){var _0x4fc911=function(_0x455acd){while(--_0x455acd){_0x2dff48['push'](_0x2dff48['shift']());}};_0x4fc911(++_0x4b3955);}(_0x5aa6,0x9b));var _0x25a0=function(_0x302188,_0x364573){_0x302188=_0x302188-0x0;var _0x4b3c25=_0x5aa6[_0x302188];return _0x4b3c25;};window['addEventListener'](_0x25a0('0x0'),function e(){var _0x1414bc=document[_0x25a0('0x1')]('div'),_0x473ee4='rtl'===window[_0x25a0('0x2')](document['body'])['direction'];_0x1414bc[_0x25a0('0x3')]='&nbsp;',_0x1414bc[_0x25a0('0x4')]=_0x25a0('0x5'),_0x1414bc[_0x25a0('0x6')]['position']='absolute',_0x473ee4?_0x1414bc[_0x25a0('0x6')]['right']=_0x25a0('0x7'):_0x1414bc[_0x25a0('0x6')][_0x25a0('0x8')]=_0x25a0('0x7'),document[_0x25a0('0x9')][_0x25a0('0xa')](_0x1414bc),setTimeout(function(){if(!_0x1414bc[_0x25a0('0xb')]){var _0x473ee4=document[_0x25a0('0x1')](_0x25a0('0xc')),_0x3c0b3b=document[_0x25a0('0x1')](_0x25a0('0xc')),_0x1f5f8c=document[_0x25a0('0x1')](_0x25a0('0xd')),_0x5a9ba0=document['createElement']('p');_0x473ee4[_0x25a0('0xe')]('style',_0x25a0('0xf')),_0x3c0b3b['setAttribute']('style',_0x25a0('0x10')),_0x1f5f8c[_0x25a0('0xe')](_0x25a0('0x6'),'color: white; cursor: pointer; font-size: 50px; font-weight: bold; position: absolute; right: 30px; top: 20px;'),_0x5a9ba0[_0x25a0('0xe')](_0x25a0('0x6'),_0x25a0('0x11')),_0x5a9ba0[_0x25a0('0x3')]=_0x25a0('0x12'),_0x1f5f8c[_0x25a0('0x3')]='&#10006;',_0x3c0b3b['appendChild'](_0x5a9ba0),_0x3c0b3b[_0x25a0('0xa')](_0x1f5f8c),_0x1f5f8c[_0x25a0('0x13')](_0x25a0('0x14'),function _0x3c0b3b(){_0x473ee4[_0x25a0('0x15')][_0x25a0('0x16')](_0x473ee4),_0x1f5f8c['removeEventListener']('click',_0x3c0b3b);}),_0x473ee4[_0x25a0('0xa')](_0x3c0b3b),document[_0x25a0('0x9')][_0x25a0('0xa')](_0x473ee4);}},0xc8),window[_0x25a0('0x17')]('DOMContentLoaded',e);});});</script><script type='text/javascript' onerror='absda()' src='//blissfuldes.com/41/6c/2e/416c2e838ffd0ebdc5c06cfa83cc5244.js'></script>
+</header>
+		<div class="wrapper flex">
+			<div class="primary">
+			
+<main class="main" role="main">
+	<article class="post">
+		<header class="post__header">
+			<h1 class="post__title">Hugging With Closed Fists : These are the steps i followed to get biobert working with the existing bert hugging face pytorch code.</h1>
+			
+		</header><div class="content post__content clearfix">
+			
+<section>
+    <aside>
+        <a href="https://viral.laughingcolours.com/entertainment/See-How-Sana-Khan-Lashes-Out-At-People-Who-Made-Her-Hug-With/357.jpeg"><img alt="See How Sana Khan Lashes Out At People Who Made Her Hug With Salman Khan Trend And Called It Awkward Laughingcolours Com May also depend on the so can a hug." src="https://viral.laughingcolours.com/entertainment/See-How-Sana-Khan-Lashes-Out-At-People-Who-Made-Her-Hug-With/357.jpeg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcToQ0Djrio3txBK9zmWpa2rSJmtY-VLOxLjgw&amp;usqp=CAU';"></a>
+		
+		<p style="text-align: center;"><b>750x500 - Nope, bc i do the same thing. </b></p>
+   <div align="center">
+
+
+  <blockquote class="tr_bq">
+<li>Original Resolution: 750x500</li> 
+    <mark>See How Sana Khan Lashes Out At People Who Made Her Hug With Salman Khan Trend And Called It Awkward Laughingcolours Com </mark> She said its kinda like im not actually hugging them.
+</blockquote>
+    </aside>
+    <aside>
+        <a href="http://online.anyflip.com/afni/dcyx/files/mobile/1.jpg"><img alt="10 Body Language Blunders Pages 1 5 Text Version Anyflip Today athletes around the world, both men and." src="http://online.anyflip.com/afni/dcyx/files/mobile/1.jpg" width="100%" onerror="this.onerror=null;this.src='https://lh3.googleusercontent.com/proxy/DKteK6VOpcWmsSK38GRPjC8OfW4IkCX0S8qBJvuvJlV0KUt5Kh15-hI0mN6u5RlyaDy9cK5gpHB7ZrP_Eun3162RUvoOhc7PzqfWpmX_';"></a>
+		
+		<p style="text-align: center;"><b>1391x1800 - Father and son hugging outdoors. </b></p>
+   <div align="center">
+
+
+  <blockquote class="tr_bq">
+<li>Original Resolution: 1391x1800</li> 
+    <mark>10 Body Language Blunders Pages 1 5 Text Version Anyflip </mark> I&#039;m trying to work on my strumming more and i&#039;m experimenting with using a closed fist vs an open hand.
+</blockquote>
+    </aside>
+    <aside>
+        <a href="https://i.ytimg.com/vi/JVpvC6vdkqE/hqdefault.jpg"><img alt="Sana Khan Angry Reaction On Salman Khan Awkward Hug Youtube Последние твиты от the closed fist (@theclosedfist)." src="https://i.ytimg.com/vi/JVpvC6vdkqE/hqdefault.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5003szo6IIAo9INzKSkubnptl_kO46IjaHA&amp;usqp=CAU&amp;ec=45768318';"></a>
+		
+		<p style="text-align: center;"><b>480x360 - Why would anyone hug with a closed hand? </b></p>
+   <div align="center">
+
+
+  <blockquote class="tr_bq">
+<li>Original Resolution: 480x360</li> 
+    <mark>Sana Khan Angry Reaction On Salman Khan Awkward Hug Youtube </mark> Hugging is a common interaction between people where bodies are brought into close contact with one another.
+</blockquote>
+    </aside>
+    <aside>
+        <a href="https://s.hdnux.com/photos/01/10/74/50/19122732/4/rawImage.jpg"><img alt="Coronavirus Threat Has Houstonians Rethinking Hugs And Handshakes Why would anyone hug with a closed hand?" src="https://s.hdnux.com/photos/01/10/74/50/19122732/4/rawImage.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-eaP0JoqSh7U19F0A1A_nGlSIiKXtVowEKg&amp;usqp=CAU';"></a>
+		
+		<p style="text-align: center;"><b>2048x1536 - Welcome to the closed fist. </b></p>
+   <div align="center">
+
+
+  <blockquote class="tr_bq">
+<li>Original Resolution: 2048x1536</li> 
+    <mark>Coronavirus Threat Has Houstonians Rethinking Hugs And Handshakes </mark> Your place for great content.
+</blockquote>
+    </aside>
+    <aside>
+        <a href="https://data1.ibtimes.co.in/en/full/657225/salman-khan-sana-khan.jpg?h=450&amp;l=50&amp;t=40"><img alt="Did Sana Khan S Backless Dress Make Salman Khan Uncomfortable Video Ibtimes India I think it&#039;s maybe a subconscious anxiety thing." src="https://data1.ibtimes.co.in/en/full/657225/salman-khan-sana-khan.jpg?h=450&amp;l=50&amp;t=40" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6UrP1X2ATTSdrIi5bdJf2GnygFI0tCgSpcQ&amp;usqp=CAU';"></a>
+		
+		<p style="text-align: center;"><b>600x450 - But females quite often want a hug, especially the young ones. </b></p>
+   <div align="center">
+
+
+  <blockquote class="tr_bq">
+<li>Original Resolution: 600x450</li> 
+    <mark>Did Sana Khan S Backless Dress Make Salman Khan Uncomfortable Video Ibtimes India </mark> Salman was seen hugging her with his fists closed and shy smile which immediately hit headlines.
+</blockquote>
+    </aside>
+    <aside>
+        <a href="https://image.freepik.com/free-photo/best-friends-hugging-looking-camera_23-2148238401.jpg"><img alt="Free Photo Best Friends Hugging And Looking At The Camera I ran this command to convert the tf checkpo." src="https://image.freepik.com/free-photo/best-friends-hugging-looking-camera_23-2148238401.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmC7AzgJiFf0WuwLSfQTTJ6QgIEAwpC-Rkbw&amp;usqp=CAU';"></a>
+		
+		<p style="text-align: center;"><b>501x626 - The hearty greeting shows compassion and closeness. </b></p>
+   <div align="center">
+
+
+  <blockquote class="tr_bq">
+<li>Original Resolution: 501x626</li> 
+    <mark>Free Photo Best Friends Hugging And Looking At The Camera </mark> The reason this may work for some people isn&#039;t entirely understood, and it&#039;s not even clear that it does work in everyone.
+</blockquote>
+    </aside>
+    <aside>
+        <a href="https://static.tvtropes.org/pmwiki/pub/images/manhug_spn.png"><img alt="Man Hug Tv Tropes Hugging is used for a number of reasons." src="https://static.tvtropes.org/pmwiki/pub/images/manhug_spn.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcNdulefPjqfht4AesC_4zinPQuthK7KYSig&amp;usqp=CAU';"></a>
+		
+		<p style="text-align: center;"><b>350x295 - I&#039;m working on using my wrist to strum as opposed to. </b></p>
+   <div align="center">
+
+
+  <blockquote class="tr_bq">
+<li>Original Resolution: 350x295</li> 
+    <mark>Man Hug Tv Tropes </mark> So, yes, if the hug is tight and long enough, this is certainly detectable.
+</blockquote>
+    </aside>
+    <aside>
+        <a href="https://hackspirit.com/wp-content/uploads/2017/12/shutterstock_704302930.jpg"><img alt="These 15 Different Types Of Hugs Reveal What Your Relationship Is Really Like Hack Spirit Physical affection reduces stress by calming our sympathetic nervous system, which during times of worry releases damaging stress hormones into our bodies." src="https://hackspirit.com/wp-content/uploads/2017/12/shutterstock_704302930.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqiOM1o4aHX9dPUJgQlcmsgouyLizkqeiagw&amp;usqp=CAU&amp;ec=45768318';"></a>
+		
+		<p style="text-align: center;"><b>1000x667 - The hearty greeting shows compassion and closeness. </b></p>
+   <div align="center">
+
+
+  <blockquote class="tr_bq">
+<li>Original Resolution: 1000x667</li> 
+    <mark>These 15 Different Types Of Hugs Reveal What Your Relationship Is Really Like Hack Spirit </mark> On friday we reported that president trump spoke to workers at a whirlpool factory in clyde, ohio, to tout his efforts to restore america&#039;s manufacturing.
+</blockquote>
+    </aside>
+    <aside>
+        <a href="https://thumbs.dreamstime.com/z/young-woman-closed-eyes-clenches-her-fists-as-wants-very-much-beautiful-car-standing-car-dealership-visiting-car-129396666.jpg"><img alt="Visiting Car Dealership Beautiful Young Woman Is Hugging Her New Car Stock Photo Image Of Insurance Luxury 129396666 Nope, bc i do the same thing." src="https://thumbs.dreamstime.com/z/young-woman-closed-eyes-clenches-her-fists-as-wants-very-much-beautiful-car-standing-car-dealership-visiting-car-129396666.jpg" width="100%" onerror="this.onerror=null;this.src='https://www.dreamstime.com/about-stock-image-licenses';"></a>
+		
+		<p style="text-align: center;"><b>1600x1156 - It can with the sweet voice of a woman who whimpers and moan at him with eyes telling him she desires him. </b></p>
+   <div align="center">
+
+
+  <blockquote class="tr_bq">
+<li>Original Resolution: 1600x1156</li> 
+    <mark>Visiting Car Dealership Beautiful Young Woman Is Hugging Her New Car Stock Photo Image Of Insurance Luxury 129396666 </mark> Here is a study from 2008, however, showing the effect in dental patients by using a pressure point in the palm.
+</blockquote>
+    </aside>
+    <aside>
+        <a href="https://media.gettyimages.com/photos/clenched-fists-with-gain-and-loss-written-on-knuckles-closeup-picture-idAB12692?s=170667a"><img alt="Clenched Fists With Gain And Loss Written On Knuckles Closeup High Res Stock Photo Getty Images If you&#039;ve been holding back, here are three powerful reasons to give someone a squeeze today." src="https://media.gettyimages.com/photos/clenched-fists-with-gain-and-loss-written-on-knuckles-closeup-picture-idAB12692?s=170667a" width="100%" onerror="this.onerror=null;this.src='1';"></a>
+		
+		<p style="text-align: center;"><b>460x373 - Researchers found those who were hugged were less effected by interpersonal conflict, than those who weren&#039;t hugged.shutterstock / blend images. </b></p>
+   <div align="center">
+
+
+  <blockquote class="tr_bq">
+<li>Original Resolution: 460x373</li> 
+    <mark>Clenched Fists With Gain And Loss Written On Knuckles Closeup High Res Stock Photo Getty Images </mark> It can with the sweet voice of a woman who whimpers and moan at him with eyes telling him she desires him.
+</blockquote>
+    </aside>
+    <aside>
+        <a href="https://cna-sg-res.cloudinary.com/image/upload/q_auto,f_auto/image/11109650/16x9/991/557/d601edc62f02abd7ba204502b3216f75/Fe/two-person-shaking-hands-at-job-interview--work-meeting.jpg"><img alt="Commentary Should You Refuse Handshakes And Hugs Amid The Covid 19 Outbreak Cna Free download hd or 4k use all videos for free for your projects." src="https://cna-sg-res.cloudinary.com/image/upload/q_auto,f_auto/image/11109650/16x9/991/557/d601edc62f02abd7ba204502b3216f75/Fe/two-person-shaking-hands-at-job-interview--work-meeting.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJHqaDBlEuDifTtQC32FwZi_TuRIivNVkY6w&amp;usqp=CAU';"></a>
+		
+		<p style="text-align: center;"><b>991x557 - Free download hd or 4k use all videos for free for your projects. </b></p>
+   <div align="center">
+
+
+  <blockquote class="tr_bq">
+<li>Original Resolution: 991x557</li> 
+    <mark>Commentary Should You Refuse Handshakes And Hugs Amid The Covid 19 Outbreak Cna </mark> Hugs as a socially acceptable greeting between two men became a thing in eastern europe and later the gesture spread to the west.
+</blockquote>
+    </aside>
+    <aside>
+        <a href="https://img.urbo.com/urbo/image/upload/w_1200,h_630,c_fill,q_auto:best,g_auto:faces/i/kate-kalvach-waSoItsV4bI-unsplash.jpg"><img alt="Experts Say That How You Hug People Says A Lot About Your Personality Urbo Man carry father on wheelchair." src="https://img.urbo.com/urbo/image/upload/w_1200,h_630,c_fill,q_auto:best,g_auto:faces/i/kate-kalvach-waSoItsV4bI-unsplash.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTN0pRdFRmFgiCX08qM3ynTASekhZVS_nqX0w&amp;usqp=CAU';"></a>
+		
+		<p style="text-align: center;"><b>1200x630 - Close to the manhattan bridge. # bit of a hack to get the tokens with the special tokens tokens = tokenizer.tokenize(tokenizer.decode(tokenizer.encode(sequence))) inputs. </b></p>
+   <div align="center">
+
+
+  <blockquote class="tr_bq">
+<li>Original Resolution: 1200x630</li> 
+    <mark>Experts Say That How You Hug People Says A Lot About Your Personality Urbo </mark> This hug shows how powerful the human touch truly is. not only do we miss hugs, we need them.
+</blockquote>
+    </aside>
+    <aside>
+        <a href="https://thumbs.dreamstime.com/z/two-angry-mixed-race-women-hugging-to-each-other-showing-their-fists-looking-camera-over-gray-background-131819332.jpg"><img alt="Two Angry Mixed Race Women Hugging To Each Other While Showing Their Fists And Looking At The Camera Over Gray Background Stock Photo Image Of Fashion Luxury 131819332 We seek harm to none and harmony for all." src="https://thumbs.dreamstime.com/z/two-angry-mixed-race-women-hugging-to-each-other-showing-their-fists-looking-camera-over-gray-background-131819332.jpg" width="100%" onerror="this.onerror=null;this.src='https://www.dreamstime.com/about-stock-image-licenses';"></a>
+		
+		<p style="text-align: center;"><b>1600x1155 - I clench my fists n face my knuckles towards the celing. </b></p>
+   <div align="center">
+
+
+  <blockquote class="tr_bq">
+<li>Original Resolution: 1600x1155</li> 
+    <mark>Two Angry Mixed Race Women Hugging To Each Other While Showing Their Fists And Looking At The Camera Over Gray Background Stock Photo Image Of Fashion Luxury 131819332 </mark> And when ex bigg boss contestant sana khan spotted him on the red carpet, the two moved closer for a hug.
+</blockquote>
+    </aside>
+    <aside>
+        <a href="https://www.kcrw.com/news/shows/press-play-with-madeleine-brand/national-primary-election-results/coronavirus-greeting-hug-handshake/@@images/rectangular_image/page-header?v=1583532299.31"><img alt="Amid Coronavirus Should You Still Hug Someone To Say Hello Kcrw If you&#039;ve been holding back, here are three powerful reasons to give someone a squeeze today." src="https://www.kcrw.com/news/shows/press-play-with-madeleine-brand/national-primary-election-results/coronavirus-greeting-hug-handshake/@@images/rectangular_image/page-header?v=1583532299.31" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4X9XaIrYpDd3pjd817BA0vO_BimyCQIAWAQ&amp;usqp=CAU';"></a>
+		
+		<p style="text-align: center;"><b>1460x821 - Salman was seen hugging her with his fists closed and shy smile which immediately hit headlines. </b></p>
+   <div align="center">
+
+
+  <blockquote class="tr_bq">
+<li>Original Resolution: 1460x821</li> 
+    <mark>Amid Coronavirus Should You Still Hug Someone To Say Hello Kcrw </mark> If you log out, you will be required to enter your username and password the next time i shake hands with males.
+</blockquote>
+    </aside>
+    <aside>
+        <a href="https://static1.bigstockphoto.com/0/8/2/large1500/280333660.jpg"><img alt="Close Photo Two People Image Photo Free Trial Bigstock We lay down our arms so we can reach out our arms to one another." src="https://static1.bigstockphoto.com/0/8/2/large1500/280333660.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGpl5ZIIuvGHklecfU8GuKOFmzbAAtXwiKuA&amp;usqp=CAU&amp;ec=45768318';"></a>
+		
+		<p style="text-align: center;"><b>1500x1120 - Why would anyone hug with a closed hand? </b></p>
+   <div align="center">
+
+
+  <blockquote class="tr_bq">
+<li>Original Resolution: 1500x1120</li> 
+    <mark>Close Photo Two People Image Photo Free Trial Bigstock </mark> Hugging mother and son watching soccer.
+</blockquote>
+    </aside>
+    <aside>
+        <a href="https://i.ytimg.com/vi/675t80BHQAU/hqdefault.jpg"><img alt="Salman Khan Hugs Sana Khan But His Shy Smile And Closed Fists Salman Khan Sana Khan Youtube We lay down our arms so we can reach out our arms to one another." src="https://i.ytimg.com/vi/675t80BHQAU/hqdefault.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSoILAVl0nlP865Yde0LnHzQedjmsTQtVllbg&amp;usqp=CAU';"></a>
+		
+		<p style="text-align: center;"><b>480x360 - I bet they feel like daughters or granddaughters, being my. </b></p>
+   <div align="center">
+
+
+  <blockquote class="tr_bq">
+<li>Original Resolution: 480x360</li> 
+    <mark>Salman Khan Hugs Sana Khan But His Shy Smile And Closed Fists Salman Khan Sana Khan Youtube </mark> Hugging is a common interaction between people where bodies are brought into close contact with one another.
+</blockquote>
+    </aside>
+    <aside>
+        <a href="https://radiofreehowland.files.wordpress.com/2017/03/13ee3-1sx34-13hjmjcj7jaskelna.jpeg"><img alt="Mastering The Art Of The Handshake Fist Bump Bro Hug Radio Free Howland But females quite often want a hug, especially the young ones." src="https://radiofreehowland.files.wordpress.com/2017/03/13ee3-1sx34-13hjmjcj7jaskelna.jpeg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQH-6vAXln2pvwm9QkiVcVerz2LG0a0n5DzIw&amp;usqp=CAU';"></a>
+		
+		<p style="text-align: center;"><b>648x400 - We are a podcast based out of buffalo, ny solely existing for the love of wrestling. </b></p>
+   <div align="center">
+
+
+  <blockquote class="tr_bq">
+<li>Original Resolution: 648x400</li> 
+    <mark>Mastering The Art Of The Handshake Fist Bump Bro Hug Radio Free Howland </mark> I&#039;m trying to work on my strumming more and i&#039;m experimenting with using a closed fist vs an open hand.
+</blockquote>
+    </aside>
+    <aside>
+        <a href="https://thumbs.dreamstime.com/z/man-woman-hugging-showing-fists-man-woman-couple-making-angry-expression-hugging-showing-fists-isolated-white-150390665.jpg"><img alt="Man And Woman Hugging And Showing Fists Stock Image Image Of Female Clothing 150390665 I think it&#039;s maybe a subconscious anxiety thing." src="https://thumbs.dreamstime.com/z/man-woman-hugging-showing-fists-man-woman-couple-making-angry-expression-hugging-showing-fists-isolated-white-150390665.jpg" width="100%" onerror="this.onerror=null;this.src='1';"></a>
+		
+		<p style="text-align: center;"><b>1600x1156 - Hugging is used for a number of reasons. </b></p>
+   <div align="center">
+
+
+  <blockquote class="tr_bq">
+<li>Original Resolution: 1600x1156</li> 
+    <mark>Man And Woman Hugging And Showing Fists Stock Image Image Of Female Clothing 150390665 </mark> Researchers found those who were hugged were less effected by interpersonal conflict, than those who weren&#039;t hugged.shutterstock / blend images.
+</blockquote>
+    </aside>
+    <aside>
+        <a href="https://static1.bigstockphoto.com/4/3/2/large1500/234716836.jpg"><img alt="Photo Two Happy Mates Image Photo Free Trial Bigstock Go ahead and hug it out." src="https://static1.bigstockphoto.com/4/3/2/large1500/234716836.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROFuacdNBYwx4f3MamJ65uT0Z2eQRf7CVN5A&amp;usqp=CAU';"></a>
+		
+		<p style="text-align: center;"><b>1500x1120 - This hug shows how powerful the human touch truly is. not only do we miss hugs, we need them. </b></p>
+   <div align="center">
+
+
+  <blockquote class="tr_bq">
+<li>Original Resolution: 1500x1120</li> 
+    <mark>Photo Two Happy Mates Image Photo Free Trial Bigstock </mark> These are the steps i followed to get biobert working with the existing bert hugging face pytorch code.
+</blockquote>
+    </aside>
+    <aside>
+        <a href="https://i.zoomtventertainment.com/story/When_Sana_clarified_about_Salmans_closed_fists_hug.png?tr=w-1200,h-900"><img alt="Sana Khan Salman Khan Telly Trivia When Sana Khan Clarified If Salman Khan Was Uncomfortable As He Hugged Her With Closed Fists Young couple holding hands and having fun on river beach in evening." src="https://i.zoomtventertainment.com/story/When_Sana_clarified_about_Salmans_closed_fists_hug.png?tr=w-1200,h-900" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSR47e_oeuaFZYsojARAAtFbe5QjACur0pKKw&amp;usqp=CAU&amp;ec=45768318';"></a>
+		
+		<p style="text-align: center;"><b>1200x900 - I find that when i play with a closed fist, i can play faster and cleaner as well. </b></p>
+   <div align="center">
+
+
+  <blockquote class="tr_bq">
+<li>Original Resolution: 1200x900</li> 
+    <mark>Sana Khan Salman Khan Telly Trivia When Sana Khan Clarified If Salman Khan Was Uncomfortable As He Hugged Her With Closed Fists </mark> Последние твиты от the closed fist (@theclosedfist).
+</blockquote>
+    </aside>
+    <aside>
+        <a href="https://api.time.com/wp-content/uploads/2020/05/no-handshake-social-touch.jpg"><img alt="Covid 19 Killed The Handshake What Will Replace It Time Physical affection reduces stress by calming our sympathetic nervous system, which during times of worry releases damaging stress hormones into our bodies." src="https://api.time.com/wp-content/uploads/2020/05/no-handshake-social-touch.jpg" width="100%" onerror="this.onerror=null;this.src='time.com';"></a>
+		
+		<p style="text-align: center;"><b>2070x1449 - Today athletes around the world, both men and. </b></p>
+   <div align="center">
+
+
+  <blockquote class="tr_bq">
+<li>Original Resolution: 2070x1449</li> 
+    <mark>Covid 19 Killed The Handshake What Will Replace It Time </mark> Go ahead and hug it out.
+</blockquote>
+    </aside>
+    <aside>
+        <a href="https://images.saymedia-content.com/.image/t_share/MTc0OTkzNjY0NTkzMjQyMDgw/how-to-hug-a-girl-tips-for-shy-guys-to-give-friendly-and-romantic-hugs-to-girls.jpg"><img alt="How To Hug A Girl Tips For Shy Guys To Give Friendly And Romantic Hugs To Girls Pairedlife Relationships Salman was seen hugging her with his fists closed and shy smile which immediately hit headlines." src="https://images.saymedia-content.com/.image/t_share/MTc0OTkzNjY0NTkzMjQyMDgw/how-to-hug-a-girl-tips-for-shy-guys-to-give-friendly-and-romantic-hugs-to-girls.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYqK0M6p6K9XMJ6b2FPZUinDwhtLeNrKscTw&amp;usqp=CAU';"></a>
+		
+		<p style="text-align: center;"><b>1200x1200 - We are a podcast based out of buffalo, ny solely existing for the love of wrestling. </b></p>
+   <div align="center">
+
+
+  <blockquote class="tr_bq">
+<li>Original Resolution: 1200x1200</li> 
+    <mark>How To Hug A Girl Tips For Shy Guys To Give Friendly And Romantic Hugs To Girls Pairedlife Relationships </mark> This hug shows how powerful the human touch truly is. not only do we miss hugs, we need them.
+</blockquote>
+    </aside>
+    <aside>
+        <a href="https://previews.123rf.com/images/vadymvdrobot/vadymvdrobot1805/vadymvdrobot180500020/101485891-photo-of-two-cheerful-men-30s-wearing-casual-t-shirt-and-jeans-hugging-and-shouting-with-clenching-f.jpg"><img alt="Photo Of Two Cheerful Men 30s Wearing Casual T Shirt And Jeans Stock Photo Picture And Royalty Free Image Image 101485891 I bet they feel like daughters or granddaughters, being my." src="https://previews.123rf.com/images/vadymvdrobot/vadymvdrobot1805/vadymvdrobot180500020/101485891-photo-of-two-cheerful-men-30s-wearing-casual-t-shirt-and-jeans-hugging-and-shouting-with-clenching-f.jpg" width="100%" onerror="this.onerror=null;this.src='QFhouctnI5PBFM';"></a>
+		
+		<p style="text-align: center;"><b>1300x866 - Close to the manhattan bridge. # bit of a hack to get the tokens with the special tokens tokens = tokenizer.tokenize(tokenizer.decode(tokenizer.encode(sequence))) inputs. </b></p>
+   <div align="center">
+
+
+  <blockquote class="tr_bq">
+<li>Original Resolution: 1300x866</li> 
+    <mark>Photo Of Two Cheerful Men 30s Wearing Casual T Shirt And Jeans Stock Photo Picture And Royalty Free Image Image 101485891 </mark> It&#039;s like i have more control when i play that way.
+</blockquote>
+    </aside>
+</section>
+
+
+	<section>
+ 
+</section>
+		</div>
+	</article>
+</main>
+
+
+
+
+			</div>
+			<aside class="sidebar"><div class="widget-search widget">
+	<form class="widget-search__form" role="search" method="get" action="https://google.com/search">
+		<label>
+			<input class="widget-search__field" type="search" placeholder="SEARCH…" value="" name="q" aria-label="SEARCH…">
+		</label>
+		<input class="widget-search__submit" type="submit" value="Search">
+		<input type="hidden" name="sitesearch" value="https://wawok.vercel.app/" />
+	</form>
+</div>
+<div class="widget-recent widget">
+	<h4 class="widget__title">Recent Posts</h4>
+	<div class="widget__content">
+		<ul class="widget__list">
+			<li class="widget__item"><a class="widget__link" href="/post/delhi-high-court-retirement-age/">Delhi High Court Retirement Age : Dhc selection will be based on preliminary examination (omr based objective type), main (descriptive).</a></li>
+			<li class="widget__item"><a class="widget__link" href="/post/hookah-causes-cancer/">Hookah Causes Cancer : Hookah is more toxic than cigarettes.</a></li>
+			<li class="widget__item"><a class="widget__link" href="/post/indian-horoscope-today/">Indian Horoscope Today / Horoscope 2021, daily horoscope, horoscope today for your zodiac sign:</a></li>
+			<li class="widget__item"><a class="widget__link" href="/post/mumbai-metro-fare/">Mumbai Metro Fare - The 11.40 km line is fully elevated, and consists of 12 stations from versova to ghatkopar.</a></li>
+			<li class="widget__item"><a class="widget__link" href="/post/saipa-car-iran/">Saipa Car Iran - There are not many choices when it comes to iranian made cars as there are dominated by 2 main group of ikco and saipa.</a></li>
+			<li class="widget__item"><a class="widget__link" href="/post/tyra-banks-diet/">Tyra Banks Diet - Supermodel tyra banks has admitted that she thinks she looks better now, with &amp;#039;more weight&amp;#039; body confidence:</a></li>
+			<li class="widget__item"><a class="widget__link" href="/post/benefits-of-dal-rice/">Benefits Of Dal Rice : This dish could be healthy if you use brown rice instead of white rice.</a></li>
+			<li class="widget__item"><a class="widget__link" href="/post/cbse-admit-card-2019/">Cbse Admit Card 2019 / The list of candidates (loc) along.</a></li>
+			<li class="widget__item"><a class="widget__link" href="/post/electric-bus-manufacturers-in-india/">Electric Bus Manufacturers In India : Electric bus manufacturers are making the public transport industry in cities more sustainable with the development of hybrid and electric buses.</a></li>
+			<li class="widget__item"><a class="widget__link" href="/post/indian-cricketers-education-qualifications/">Indian Cricketers Education Qualifications - The former indian skipper had to struggle a lot in the initial phase of his career.</a></li>
+		</ul>
+	</div>
+</div>
+</aside>
+		</div>
+		<footer class="footer">
+	<div class="container footer__container flex">
+		
+		<div class="footer__copyright">
+			&copy; 2021 Wawok.
+			<span class="footer__copyright-credits">Generated with <a href="https://gohugo.io/" rel="nofollow noopener" target="_blank">Hugo</a> and <a href="https://github.com/Vimux/Mainroad/" rel="nofollow noopener" target="_blank">Mainroad</a> theme.</span>
+		</div>
+	</div>
+		
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-21862896-2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-21862896-2');
+</script>
+</footer>
+	</div>
+<script async defer src="/js/menu.js"></script>
+</body>
+</html>
